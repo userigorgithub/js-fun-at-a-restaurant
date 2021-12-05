@@ -48,7 +48,7 @@ describe("Chef (class)", function() {
     assert.equal(scott.greetCustomer("Pam"), "Hello, Pam!");
   });
 
-  it.skip('should greet a customer differently if it is morning', function () {
+  it('should greet a customer differently if it is morning', function () {
     var casey = new Chef("Casey");
 
     assert.equal(casey.greetCustomer("Scott"), "Hello, Scott!");
@@ -56,7 +56,7 @@ describe("Chef (class)", function() {
     assert.equal(casey.greetCustomer("Hannah", false), "Hello, Hannah!");
   });
 
-  it.skip("should confirm if a requested item is on the menu", function() {
+  it("should confirm if a requested item is on the menu", function() {
     var restaurant = createRestaurant("Average Bakery");
     var chef = new Chef("Hannah", restaurant);
 
@@ -82,7 +82,7 @@ describe("Chef (class)", function() {
     assert.equal(foodConfirmation2, "Yes, we're serving Cherry Danishes today!");
   });
 
-  it.skip("should confirm if a different requested item is on the menu", function () {
+  it("should confirm if a different requested item is on the menu", function () {
     var restaurant = createRestaurant("Five Star Bakery");
     var chef = new Chef("Kayla", restaurant);
 
@@ -99,7 +99,7 @@ describe("Chef (class)", function() {
     assert.equal(foodConfirmation, "Yes, we're serving Tart Tatin today!");
   });
 
-  it.skip("should confirm if a requested item is not on the menu", function () {
+  it("should confirm if a requested item is not on the menu", function () {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Scott", restaurant);
 
@@ -114,7 +114,7 @@ describe("Chef (class)", function() {
     assert.equal(foodConfirmation, "Sorry, we aren't serving Quiche today.");
   });
 
-  it.skip("should confirm if a different requested item is not on the menu", function () {
+  it("should confirm if a different requested item is not on the menu", function () {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Scott", restaurant);
 

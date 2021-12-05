@@ -10,7 +10,6 @@ function createRestaurant(name) {
   return restaurant;
 }
 
-
 function addMenuItem(restaurant, item) {
   if (item.type === 'breakfast' && !restaurant.menus.breakfast.includes(item)) {
     restaurant.menus.breakfast.push(item);
@@ -24,7 +23,6 @@ function addMenuItem(restaurant, item) {
   return restaurant;
 }
 
-
 function removeMenuItem(restaurant, item, type) {
   for (var i = 0; i < restaurant.menus[type].length; i++) {
     if (restaurant.menus[type][i].name === item) {
@@ -34,7 +32,6 @@ function removeMenuItem(restaurant, item, type) {
   }
   return `Sorry, we don't sell ${item}, try adding a new recipe!`
 }
-
 
 module.exports = {
   createRestaurant,

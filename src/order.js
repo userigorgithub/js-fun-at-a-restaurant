@@ -12,7 +12,6 @@ function refundOrder(number, myOrders) {
     }
   }
 }
-/////////PLAY
 
 function listItems(myOrders) {
   var itemNames = [];
@@ -21,7 +20,6 @@ function listItems(myOrders) {
   }
   return itemNames.join(', ');
 }
-//////////PLAY
 
 function searchOrder(myOrders, food) {
   var haveOrder = false;

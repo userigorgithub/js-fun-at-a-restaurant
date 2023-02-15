@@ -11,17 +11,17 @@ function createMenuItem(name, price, type) {
   return menuItem;
 }
 
-function addIngredients(extraFood, ingredientsArray) {
-  if (ingredientsArray.includes(extraFood)) {
-    return extraFood;
+function addIngredients(food, ingredients) {
+  if (ingredients.includes(food)) {
+    return ingredients;
   } else {
-    ingredientsArray.push(extraFood);
-    return extraFood;
+    ingredients.push(food);
+    return ingredients;
   }
 }
 
 function formatPrice(price) {
-  return price.length = `$${price}`;
+  return `$${price}`;
 }
 
 function decreasePrice(price) {
